@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+library.add(fas);
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>SIMPLE COUNTDOWN</h1>
+      <div>
+        <button><FontAwesomeIcon icon={['fas', 'caret-up']} style={{width: '100px', height: '100px'}} /></button>
+        <button><FontAwesomeIcon icon={['fas', 'caret-up']} style={{width: '100px', height: '100px'}} /></button>
+        <button><FontAwesomeIcon icon={['fas', 'caret-up']} style={{width: '100px', height: '100px'}} /></button>
+      </div>
+      <div className="numbers">
+        <h1 style={{fontSize: '55px'}}>00 : 00 : 00</h1>
+      </div>
+      <div>
+        <button><FontAwesomeIcon icon={['fas', 'caret-down']} style={{width: '100px', height: '100px'}} /></button>
+        <button><FontAwesomeIcon icon={['fas', 'caret-down']} style={{width: '100px', height: '100px'}} /></button>
+        <button><FontAwesomeIcon icon={['fas', 'caret-down']} style={{width: '100px', height: '100px'}} /></button>
+      </div>
+      <button><h1>Start</h1></button>
     </div>
   );
 }
