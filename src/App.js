@@ -7,7 +7,6 @@ library.add(fas);
 function App() {
   return (
     <div className="App">
-      <h1>SIMPLE COUNTDOWN</h1>
       <div>
         <button><FontAwesomeIcon icon={['fas', 'caret-up']} style={{width: '100px', height: '100px'}} /></button>
         <button><FontAwesomeIcon icon={['fas', 'caret-up']} style={{width: '100px', height: '100px'}} /></button>
